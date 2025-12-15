@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <section class="sec-01">
+        <div class="container">
+            <h2 class="main-title">Website with Scroll</h2>
+            <div class="content">
+            <div class="image">
+                <img src="img1.jpg" alt="Image of a Mountain">
+            </div>
+            <div class="text">
+                <h3>MOUTAINS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae aliquam quisquam quasi expedita hic laboriosam libero deserunt tempora nostrum, laudantium fugit, mollitia illo consequuntur, recusandae culpa dicta vitae! Saepe facere quibusdam, nesciunt reiciendis earum rem. Cum, exercitationem! Hic, reiciendis alias.</p>
+            </div>
+        </div>
+        <div class="media">
+            <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="icon"><i class="fab fa-google"></i></a>
+            <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="sec-02">
+        <div class="container">
+            <h2 class="main-title">Visit the Lakes</h2>
+            <div class="content">
+                <div class="image">
+                    <img src="img2.jpg" alt="Image of a Lake">
+                </div>
+                <div class="info">
+                    <h3>LAKES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsam ea praesentium ex qui, veniam iste perferendis, deserunt dolore provident hic aliquam quis ipsum velit aliquid accusantium voluptatem illum soluta! At, illum voluptatum et aliquid neque reiciendis doloremque possimus provident?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-03">
+        <div class="container">
+            <h2 class="main-title2">Greatest White Ball Player of All Time</h2>
+            <div class="content">
+                <div class="media-info">
+                    <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-google"></i>Google</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i>Youtube</a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+                </div>
+                <div class="image">
+                    <img src="img3.webp" alt="Virat Kohli">                
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 1500,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.main-title, .main-title2', { delay: 100, origin:'top'});
+        ScrollReveal().reveal('.sec-01 .image', { delay: 300, origin:'left'});
+        ScrollReveal().reveal('.sec-02 .image', { delay: 300, origin:'left'});
+        ScrollReveal().reveal('.sec-03 .image', { delay: 300, origin:'right'});
+        ScrollReveal().reveal('.text', { delay: 500, origin:'right'});
+        ScrollReveal().reveal('.info', { delay: 500, origin:'right'});
+        ScrollReveal().reveal('.media i', { delay: 700, origin:'bottom', interval: 150});
+        ScrollReveal().reveal('.media-info li', { delay: 500, origin:'left', interval: 150});
+        
+    </script>
+</body>
+</html>
